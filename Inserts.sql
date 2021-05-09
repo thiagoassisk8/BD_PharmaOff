@@ -1,10 +1,12 @@
 
 -- Estabelecimento:
-insert tb_Estabelecimento(nme_estabalecimento,rating,userRantingCount,vicinity,ft_estabelecimento,geometryy,desc_estabelecimento,sts_estabelecimento) 
-values ('Drogaria Rosario Asa norte',25.3,1,'15','creme.png','10','olá tudo bem',true);
-
+insert into tb_Estabelecimento(nme_estabelecimento, rating_estabelecimento, endereço_estabelecimento, img_estabelecimento, sts_estabelecimento) 
+values ('Rosario',9.5,'Asa norte','imagem farmacia',True);
+insert into tb_Estabelecimento(nme_estabelecimento, rating_estabelecimento, endereço_estabelecimento, img_estabelecimento, sts_estabelecimento) 
+values ('Dragasil',7.3,'Sudoeste','imagem farmacia',False);
 
 -- Produtos:
-insert ta_produto(nme_produto,preco_produto,desc_produto,img_produto,fk_cod_estabelecimento) 
-values ('creme',135.3,'olá meu nome é fulano','15',1);
-
+insert into ta_produto(nme_produto, preco_produto, desc_produto, img_produto,cod_estabelecimento) 
+values ('Ivermectina',184,'Medicação genérica','remedio.png',1);
+insert into ta_produto(nme_produto, preco_produto, desc_produto, img_produto,cod_estabelecimento) 
+values ('Mascara',184,'Para usar na cara','mascara.png',2);
