@@ -31,10 +31,10 @@ CREATE TABLE ta_produto (
 
 
 create table ta_cupom(
-	id_cupom int primary key auto_increment,
-    percent_cupom double not null,
+    id_cupom int primary key auto_increment,
     dta_validade_cupom timestamp,
     sts_ativo_cupom boolean,
+    percent_cupom double not null,
     cod_produto int,
     cod_estabelecimento int not null,
     constraint EstabelecimentoCupom foreign key (cod_estabelecimento) references tb_estabelecimento (id_estabelecimento),
